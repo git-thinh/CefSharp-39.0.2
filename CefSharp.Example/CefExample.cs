@@ -4,12 +4,25 @@ using System.Reflection;
 using CefSharp.Example.Proxy;
 using System.Linq;
 
+/*
+/ README
+/ https://github.com/cefsharp/CefSharp/wiki/General-Usage
+/ https://ourcodeworld.com/articles/read/173/how-to-use-cefsharp-chromium-embedded-framework-csharp-in-a-winforms-application
+*/
+
 namespace CefSharp.Example
 {
     public static class CefExample
     {
         //public const string DefaultUrl = "custom://cefsharp/BindingTest.html";
-        public const string DefaultUrl = "https://google.com";
+        //public const string DefaultUrl = "https://www.eslfast.com/kidsenglish/ke/ke001.htm";
+
+        public const string DefaultUrl = "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_youtubeiframe";
+        //public const string DefaultUrl = "https://www.w3schools.com/html/html5_video.asp";
+        //public const string DefaultUrl = "https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all";
+
+
+
         public const string TestResourceUrl = "http://test/resource/load";
         public const string TestUnicodeResourceUrl = "http://test/resource/loadUnicode";
 
@@ -18,6 +31,7 @@ namespace CefSharp.Example
 
         public static void Init()
         {
+
             // Set Google API keys, used for Geolocation requests sans GPS.  See http://www.chromium.org/developers/how-tos/api-keys
             // Environment.SetEnvironmentVariable("GOOGLE_API_KEY", "");
             // Environment.SetEnvironmentVariable("GOOGLE_DEFAULT_CLIENT_ID", "");
@@ -35,8 +49,8 @@ namespace CefSharp.Example
             //settings.UserAgent = "CefSharp Browser" + Cef.CefSharpVersion; // Example User Agent
             //settings.CefCommandLineArgs.Add("renderer-process-limit", "1");
             //settings.CefCommandLineArgs.Add("renderer-startup-dialog", "renderer-startup-dialog");
-            settings.CefCommandLineArgs.Add("disable-gpu", "1");
-            settings.CefCommandLineArgs.Add("disable-gpu-vsync", "1");
+            //settings.CefCommandLineArgs.Add("disable-gpu", "1");
+            //settings.CefCommandLineArgs.Add("disable-gpu-vsync", "1");
             //settings.CefCommandLineArgs.Add("enable-media-stream", "1"); //Enable WebRTC
             //settings.CefCommandLineArgs.Add("no-proxy-server", "1"); //Don't use a proxy server, always make direct connections. Overrides any other proxy server flags that are passed.
             //settings.CefCommandLineArgs.Add("debug-plugin-loading", "1"); //Dumps extra logging about plugin loading to the log file.
